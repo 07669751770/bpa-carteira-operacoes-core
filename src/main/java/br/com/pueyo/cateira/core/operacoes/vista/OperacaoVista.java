@@ -33,7 +33,10 @@ public abstract class OperacaoVista {
     }
     public void comIss(BigDecimal iss) {
         this.iss = iss.setScale(2, RoundingMode.HALF_EVEN);
-    }    
+    }
+    public BigDecimal getQuantidade() {
+        return this.quantidade;
+    }
     public abstract BigDecimal calculaValorOperacao();
 
   
